@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Thu Mar 07 00:20:19 CET 2019
+#Thu Mar 07 02:32:32 CET 2019
 17.baseType=DIRECTORY
 4.path=www/cordova-js-src/platform.js
 8.set=ASSET
@@ -8,7 +8,7 @@
 4.baseType=DIRECTORY
 14.base=C\:\\Users\\komp\\WebstormProjects\\untitled1\\platforms\\android\\app\\build\\intermediates\\assets\\debug
 16.set=ASSET
-count=18
+count=19
 6.base=C\:\\Users\\komp\\WebstormProjects\\untitled1\\platforms\\android\\app\\build\\intermediates\\assets\\debug
 13.path=www/plugins/cordova-plugin-camera/www/CameraPopoverHandle.js
 6.baseType=DIRECTORY
@@ -39,26 +39,30 @@ count=18
 16.baseType=DIRECTORY
 14.set=ASSET
 2.base=C\:\\Users\\komp\\WebstormProjects\\untitled1\\platforms\\android\\app\\build\\intermediates\\assets\\debug
+18.baseType=DIRECTORY
 1.path=classes.dex
 0.set=ASSET
 1.baseType=DIRECTORY
 3.baseType=DIRECTORY
 5.set=ASSET
 9.base=C\:\\Users\\komp\\WebstormProjects\\untitled1\\platforms\\android\\app\\build\\intermediates\\assets\\debug
-16.path=www/plugins/cordova-plugin-camera/www/CameraPopoverOptions.js
+16.path=www/js/otplib-browser.js
+18.base=C\:\\Users\\komp\\WebstormProjects\\untitled1\\platforms\\android\\app\\build\\intermediates\\assets\\debug
 5.baseType=DIRECTORY
 11.base=C\:\\Users\\komp\\WebstormProjects\\untitled1\\platforms\\android\\app\\build\\intermediates\\assets\\debug
 8.path=www/plugins/cordova-plugin-qrscanner/www/www.min.js
-17.path=www/cordova_plugins.js
+17.path=www/plugins/cordova-plugin-camera/www/CameraPopoverOptions.js
 7.baseType=DIRECTORY
 3.base=C\:\\Users\\komp\\WebstormProjects\\untitled1\\platforms\\android\\app\\build\\intermediates\\assets\\debug
 10.path=www/css/bootstrap.css
 13.set=ASSET
 2.path=www/cordova-js-src/android/nativeapiprovider.js
 9.baseType=DIRECTORY
+18.set=ASSET
 12.base=C\:\\Users\\komp\\WebstormProjects\\untitled1\\platforms\\android\\app\\build\\intermediates\\assets\\debug
 4.set=ASSET
 9.path=www/cordova-js-src/exec.js
+18.path=www/cordova_plugins.js
 4.base=C\:\\Users\\komp\\WebstormProjects\\untitled1\\platforms\\android\\app\\build\\intermediates\\assets\\debug
 11.path=www/index.html
 9.set=ASSET

@@ -10,7 +10,7 @@
     <feature name="QRScanner">
         <param name="android-package" value="com.bitpay.cordova.qrscanner.QRScanner" />
     </feature>
-    <name>HelloCordova</name>
+    <name>Onet 2FA</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
     </description>
