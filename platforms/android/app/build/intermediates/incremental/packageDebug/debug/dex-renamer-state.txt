@@ -1,4 +1,0 @@
-#Thu Mar 07 02:32:32 CET 2019
-base.0=C\:\\Users\\komp\\WebstormProjects\\untitled1\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
-path.0=classes.dex
-renamed.0=classes.dex
