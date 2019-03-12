@@ -40,7 +40,7 @@ var app = {
                 document.getElementById('totp-codes').innerHTML += ('<div class="card card bg-dark" id="'+localStorage.key(i)+'" style="margin-top: 10px; margin-bottom: 10px;">\n' +
                     '                    <div class="card-header">' +
                     '                        <div class="float-left">'+JSON.parse(localStorage[localStorage.key(i)]).i+'</div>\n' +
-                    '                        <div class="float-right" onclick="removeSingleTotp(\''+localStorage.key(i)+'\')">X Usuń</div></div>\n' +
+                    '                        <div class="float-right" onclick="removeSingleTotp(\''+localStorage.key(i)+'\')">X Remove</div></div>\n' +
                     '                    <div class="card-body">\n' +
                     '                        <h4 class="card-title">'+JSON.parse(localStorage[localStorage.key(i)]).e+'</h4>\n' +
                     '                        <h1 class="card-title">'+otplib.authenticator.generate(JSON.parse(localStorage[localStorage.key(i)]).s)+'</h1>\n' +
@@ -86,11 +86,11 @@ var app = {
             QRScanner.scan(this.displayContents.bind(this));
 
         } else if (status.denied) {
-            if(confirm("Musisz udostępnić możliwość nagrywania w ustawieniach aplikacji aby otrzymać możliwość skanowania kodów QR.")){
+            if(confirm("You must give a permission for camera usage.")){
                 QRScanner.openSettings();
             }
         } else {
-            if(confirm("Musisz wyrazić zgodę na użycie kamery.")){
+            if(confirm("You must give a permission for camera usage.")){
                 QRScanner.openSettings();
             }
         }
@@ -104,9 +104,9 @@ var app = {
     displayContents: function (err, text){
         if(err){
             if(err.name === 'SCAN_CANCELED') {
-                alert('Skanowanie anulowano...');
+                // alert('Cancelled...');
             } else {
-                alert('Wystąpił błąd...');
+                alert('Error...');
             }
         } else {
             this.decodeAuthURL(text).bind(this);
@@ -126,7 +126,7 @@ var app = {
         showList();
     },
 
-    // otpauth://totp/KontoOnet:gawihig@yourweb.email?secret=GNEXORTZKRUFOWSFG5YVKNDVLBGWKMCFMNGTEN3YORRXIMJZPI4Q&issuer=KontoOnet
+    // otpauth://totp/<issuer>:<user_name>?secret=<secret>&issuer=<issuer>
     decodeAuthURL: function(authUrl) {
         var issuer = authUrl.split('/')[3].split(':')[1].split('?')[1].split('&')[1].split('=')[1];
         var email = authUrl.split('/')[3].split(':')[1].split('?')[0];
